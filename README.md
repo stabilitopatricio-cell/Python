@@ -21,15 +21,15 @@ El proyecto está estructurado de forma modular, separando la coordinación de l
 
 ## Estructura
 
-```text
-Calculadora/
-|
-|- README/
-|  |- README_es.md
-|- main.py
-|- interfaz_cli.py
-|- operaciones.py
-|- test_operaciones.py
+```mermaid
+graph
+
+A(Calculadora/) --- B(main/) --- C(main.py)
+B --- D(interfaz_cli.py)
+B --- E(operaciones.py)
+B --- F(test_operaciones.py)
+A --- G(README/) --- H(README_es.md)
+A --- I(docs/)
 ```
 
 ### `main.py`
